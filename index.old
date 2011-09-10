@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.6), see www.w3.org" />
+  <meta name="generator" content="vim" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii" />
+
+  <title>LensOSX: the light, efficient network simulator</title>
+  <style type="text/css" title="Preferred Stylesheet" media=
+  "screen">
+  /*<![CDATA[*/ @import url("stylesheet.css"); /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="north">
+      <img src="lensosx.jpg" alt="LensOSX" />
+    </div>
+
+    <h1>What is Lens(OSX)?</h1>
+
+    <p class="content"><a href=
+    "http://tedlab.mit.edu/~dr/Lens/running.html">Lens</a> is the
+    light, efficient network simulator, written by <a href=
+    "http://tedlab.mit.edu/~dr/">Doug Rohde</a>. LensOSX is a
+    native MacOSX port of Lens that runs on MacOSX 10.5
+    or higher, created by
+    <a href="http://www.hbrouwer.eu/">Harm Brouwer</a> and <a href=
+    "http://odur.let.rug.nl/~fitz/">Hartmut Fitz</a>.</p>
+
+    <p class="content"><b>Disclaimer:</b> LensOSX is ported "as
+    is". This means that any bugs present in the original Lens
+    source code might also be present in LensOSX.</p>
+
+    <h1>Download LensOSX</h1>
+
+    <p class="content"><a href="" style=
+    "height=32px; vertical-align: middle;"><img src="download.png"
+    alt="Download LensOSX" style=
+    "width: 32px; vertical-align: middle; margin-right: 5px;" />
+    LensOSX for MacOSX 10.5 or higher</a></p>
+
+    <p class="content"><a href="" style=
+    "height=32px; vertical-align: middle;"><img src="source.png"
+    alt="Download source" style=
+    "width: 32px; vertical-align: middle; margin-right: 5px;" />
+    LensOSX source code</a></p>
+
+    <h1>Running LensOSX</h1>
+
+    <p class="content">There are three ways to run LensOSX. The
+    simplest way is to start LensOSX from the applications folder,
+    or through spotlight. If you follow this path, LensOSX will
+    show up with a graphical interface, and its own console
+    [<a href="">screenshot 1</a>].</p>
+
+    <p class="content">If you prefer a more traditional
+    perspective, you might wanna start LensOSX from the terminal.
+    LensOSX will still show up with a graphical interface, but now
+    print its console output to the terminal [<a href="">screenshot
+    2</a>]:</p>
+
+    <blockquote>
+      $ /Applications/LensOSX.app/Contents/MacOS/LensOSX
+    </blockquote>
+
+    <p class="content">Finally, you can also run LensOSX in batch
+    mode [<a href="">screenshot 3</a>]:</p>
+
+    <blockquote>
+      $ /Applications/LensOSX.app/Contents/MacOS/LensOSX -b
+    </blockquote>
+
+    <h1>Oops! I found a Bug, what now?!</h1>
+
+    <p class="content">Well, there are two flavors. First, you can
+    send us an e-mail with the exact details of how to reproduce
+    the malfunction (and preferably a screenshot demonstrating it).
+    Second, you can fork the LensOSX source repository at github,
+    fix the bug, and send us a pull request.</p>
+
+    <h1>Contact us</h1>You can contact us by email at <a href=
+    "mailto:me-at-hbrouwer.eu">me-at-hbrouwer.eu</a> and <a href=
+    "mailto:hartmut.fitz-at-gmail.com">hartmut.fitz-at-gmail.com</a>.
+
+    <div class="south">
+      <center>
+        (c) Copyright 2011 Harm Brouwer and Hartmut Fitz. All
+        rights reserved.
+      </center>
+    </div>
+  </div>
+</body>
+</html>
