@@ -149,13 +149,8 @@ set _record(showdot)    0
 
 ### Manual opening
 set .manualPage http://www.cs.cmu.edu/~dr/Lens/
-if {${.WINDOWS}} {
-    set .openManual   {/Program\ Files/Netscape/Communicator/Program/netscape \
-	    ${.manualPage}}
-} else {
-    set .remoteManual {open ${.manualPage}}
-    set .openManual   {open ${.manualPage}}
-}
+set .remoteManual {open ${.manualPage}}
+set .openManual   {open ${.manualPage}}
 
 ### Adds directories to the auto_path which is used to automatically source
 # files that define needed procedures
