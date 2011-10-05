@@ -482,24 +482,24 @@ proc .showAbout {} {
     
     catch {font delete .bigfont}
     frame $w.top -relief raised -bd 1
-    image create photo $w.title -file ${.RootDir}/src/images/lens.medium.gif
+    image create photo $w.title -file ${.RootDir}/src/images/LensOSX.gif
     label $w.top.title -image $w.title
-    image create photo $w.icon -file ${.RootDir}/src/images/lensIcon.gif
-    label $w.top.icon -image $w.icon
+#    image create photo $w.icon -file ${.RootDir}/src/images/lensIcon.gif
+#    label $w.top.icon -image $w.icon
 
     label $w.top.slogan -text "the light, efficient network simulator" \
 	-fg \#888888 -font .LargeFont 
     label $w.top.version -text "version ${.Version}\nwritten by Doug Rohde (dr+lens@cs.cmu.edu)\nCenter for the Neural Basis of Cognition\nCarnegie Mellon University" -font .LargeFont -justify center
 
-    label $w.top.osxport -text "MacOSX port by Harm Brouwer (me@hbrouwer.eu)\nUniversity of Groningen, Center for Language and Cognition\n" -font .LargeFont -justify center
+    label $w.top.osxport -text "MacOSX port by Harm Brouwer' (me@hbrouwer.eu),\nDaniel de Kok' (me@danieldk.eu) and Hartmut Fitz* (hartmut.fitz@gmail.com)\n' University of Groningen, Center for Language and Cognition\n* Max Planck Institute for Psycholinguistics" -font .LargeFont -justify center
 
     label $w.top.message -text "Lens and its source code is available free of charge only for experimental research at academic institutions.  A license must be obtained from Doug Rohde if Lens is to be used by other individuals or for other purposes.\n\nLens was originally based on the Xerion neural network simulator produced by Drew van Camp and Tony Plate at the University of Toronto.  The design of the graphical displays and the implementation of the training algorithms borrows somewhat from Xerion V3.1.\n\nThe graphical and scripting interfaces to Lens were written using the Tcl/Tk Toolkit, available at http://www.scriptics.com." \
 	-justify left -wraplength 500
     button $w.top.copy -text "Tcl/Tk Copyright Notice" -command .tclCopyright
 
     pack $w.top.title $w.top.slogan $w.top.version $w.top.osxport $w.top.message $w.top.copy \
-      -padx 10 -pady 5
-    place $w.top.icon -x 2 -y 30
+    # -padx 10 -pady 5
+    #place $w.top.icon -x 2 -y 30
 
     frame $w.bot -relief raised -bd 1
     button $w.bot.ok -text "Okey Dokey" -default active \

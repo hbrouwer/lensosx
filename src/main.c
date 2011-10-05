@@ -96,15 +96,15 @@ int Tcl_AppInit(Tcl_Interp *interp) {
                 createConsole(1);
         }
 
-        print(1, "                            LENS Version %s\n"
+        print(1,        "                            LENS Version %s\n"
                         "                 Copyright (C) 1998-2004  Douglas Rohde,\n"
                         "      Carnegie Mellon University, Center for the Neural Basis of "
-                        "Cognition\n       Please send comments, questions, and bugs to "
-                        "dr+lens@tedlab.mit.edu\n\n", Version);
+                        "Cognition\n\n", Version);
 
-        print(1,
-                        "                  MacOSX port by Harm Brouwer (me@hbrouwer.eu)\n"
-                        "          University of Groningen, Center for Language and Cognition\n\n"
+        print(1,        "                MacOSX port by Harm Brouwer' (me@hbrouwer.eu),\n"
+                        "    Daniel de Kok' (me@danieldk.eu) and Hartmut Fitz* (hartmut.fitz@gmail.com)\n"
+                        "             ' University of Groningen, Center for Language and Cognition\n"
+                        "             * Max Planck Institute for Psycholinguistics\n\n"
              );
 
 
