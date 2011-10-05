@@ -484,8 +484,6 @@ proc .showAbout {} {
     frame $w.top -relief raised -bd 1
     image create photo $w.title -file ${.RootDir}/src/images/LensOSX.gif
     label $w.top.title -image $w.title
-#    image create photo $w.icon -file ${.RootDir}/src/images/lensIcon.gif
-#    label $w.top.icon -image $w.icon
 
     label $w.top.slogan -text "the light, efficient network simulator" \
 	-fg \#888888 -font .LargeFont 
@@ -497,9 +495,7 @@ proc .showAbout {} {
 	-justify left -wraplength 500
     button $w.top.copy -text "Tcl/Tk Copyright Notice" -command .tclCopyright
 
-    pack $w.top.title $w.top.slogan $w.top.version $w.top.osxport $w.top.message $w.top.copy \
-    # -padx 10 -pady 5
-    #place $w.top.icon -x 2 -y 30
+    pack $w.top.title $w.top.slogan $w.top.version $w.top.osxport $w.top.message $w.top.copy
 
     frame $w.bot -relief raised -bd 1
     button $w.bot.ok -text "Okey Dokey" -default active \
