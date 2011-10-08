@@ -104,7 +104,7 @@ int Tcl_AppInit(Tcl_Interp *interp) {
         print(1,        "                MacOSX port by Harm Brouwer' (me@hbrouwer.eu),\n"
                         "    Daniel de Kok' (me@danieldk.eu) and Hartmut Fitz* (hartmut.fitz@gmail.com)\n"
                         "             ' University of Groningen, Center for Language and Cognition\n"
-                        "             * Max Planck Institute for Psycholinguistics\n\n"
+                        "             * Max Planck Institute for Psycholinguistics, Nijmegen\n\n"
              );
 
 
