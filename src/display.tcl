@@ -598,8 +598,8 @@ proc .setUnitBindings {tag g u targets} {
   .unit.c.c bind $tag <Enter> ".unitInfo $g $u $targets 0"
   .unit.c.c bind $tag <Leave> .clearUnitInfo
   .unit.c.c bind $tag <Button-1> ".lockUnit $g $u; set .lockedUnit 1"
-  .unit.c.c bind $tag <Button-2> ".unitMenu $g $u $targets %X %Y"
-  .unit.c.c bind $tag <Button-3> ".setUnitUnit $g $u"
+  .unit.c.c bind $tag <Command-Button-2> ".unitMenu $g $u $targets %X %Y"
+  .unit.c.c bind $tag <Button-2> ".setUnitUnit $g $u"
 }
 
 proc .linkMenu {g1 u1 g2 u2 lnum x y} {
