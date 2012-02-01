@@ -1,0 +1,3 @@
+/* main.h */
+
+#define ADVANCED
