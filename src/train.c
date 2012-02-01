@@ -10,6 +10,8 @@
 #include "display.h"
 #include "graph.h"
 
+#include "main.h"
+
 Algorithm AlgorithmTable = NULL;
 
 void registerAlgorithm(mask code, char *shortName, char *longName, 

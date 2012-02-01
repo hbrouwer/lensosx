@@ -13,6 +13,7 @@
 #include "display.h"
 #include "object.h"
 
+#include "main.h"
 
 /******************************* Connection Commands *************************/
 

@@ -1,5 +1,7 @@
 /* defaults.h */
 
+#include "main.h"
+
 #ifndef DEFAULTS_H
 #define DEFAULTS_H
 

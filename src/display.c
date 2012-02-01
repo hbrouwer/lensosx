@@ -67,7 +67,7 @@ void fillPalette(int palette) {
                         }
                         OutlineColor[BLUE_RED_YELLOW][0] = "black";
                         OutlineColor[BLUE_RED_YELLOW][1] = "white";
-                        OutlineColor[BLUE_RED_YELLOW][1] = "magenta";
+                        OutlineColor[BLUE_RED_YELLOW][2] = "magenta";
                         break;
                 case BLACK_GRAY_WHITE:
                         for (i = 0; i < NUM_COLORS; i++) {
@@ -77,12 +77,12 @@ void fillPalette(int palette) {
                         }
                         OutlineColor[BLACK_GRAY_WHITE][0] = "grey50";
                         OutlineColor[BLACK_GRAY_WHITE][1] = "black";
-                        OutlineColor[BLACK_GRAY_WHITE][1] = "white";
+                        OutlineColor[BLACK_GRAY_WHITE][2] = "white";
                         break;
                 case HINTON:
                         OutlineColor[HINTON][0] = "grey50";
                         OutlineColor[HINTON][1] = "black";
-                        OutlineColor[HINTON][1] = "white";
+                        OutlineColor[HINTON][2] = "white";
                         break;
         }
 }

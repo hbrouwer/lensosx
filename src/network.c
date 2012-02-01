@@ -12,6 +12,8 @@
 #include "display.h"
 #include "train.h"
 
+#include "main.h"
+
 Network Net = NULL;       /* The currently active net */
 struct rootrec root = {0, NULL, 0, NULL};
 RootRec Root = &root;

@@ -625,7 +625,7 @@ proc .drawHinton {win args} {
 proc .updateUnitInfo {} {
   global .unitGroupNum .unitNum .unitTargets
 #  if {${.unitName} != {}} {
-   .unitInfo ${.unitGroupNum} ${.unitNum} ${.unitTargets} 0
+    .unitInfo ${.unitGroupNum} ${.unitNum} ${.unitTargets} 0
 #  }
 }
 

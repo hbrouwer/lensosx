@@ -13,6 +13,8 @@
 #include "display.h"
 #include "graph.h"
 
+#include "main.h"
+
 int C_train(TCL_CMDARGS) {
         int arg = 1;
         flag result, train = TRUE;

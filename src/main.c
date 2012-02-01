@@ -20,8 +20,9 @@
 
 #include "sys/param.h"
 
+#include "main.h"
+
 #define VERSION "OSX-1.0"
-#define ADVANCED
 
 int  FirstCommand, Argc;
 char **Argv;

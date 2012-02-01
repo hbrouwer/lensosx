@@ -10,6 +10,8 @@
 #include "example.h"
 #include "object.h"
 
+#include "main.h"
+
 ObjInfo RootInfo;
 ObjInfo NetInfo;
 ObjInfo GroupInfo;
@@ -1244,7 +1246,6 @@ void *ObjPAA(char *array, int row, int col) {
         if (!array || !((char ***) array)[row]) return NULL;
         return (void *) ((char ***) array)[row][col];
 }
-
 
 /* path is the rest of the lookup path ("unit(4).output")
    object is the current structure pointer (Net->group[3])

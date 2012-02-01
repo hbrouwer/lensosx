@@ -10,6 +10,8 @@
 #include "network.h"
 #include "connect.h"
 
+#include "main.h"
+
 char **LinkTypeName;
 #define MAX_NAME_LENGTH  128    /* Names for Xerion groups */
 

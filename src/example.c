@@ -274,7 +274,7 @@ static void compileExampleSet(ExampleSet S) {
         if (Tcl_GetCommandInfo(Interp, ".initEvent", &junk))
                 for (E = S->firstExample; E; E = E->next)
                         for (v = 0; v < E->numEvents; v++)
-                                eval("catch {.initEvent root.set(%d).example(%d).event(%d)", 
+                                eval("catch {.initEvent root.set(%d).example(%d).event(%d)}", 
                                                 S->num, E->num, v);
 
         /* Determine the event probabilities for probabilistic choosing. */

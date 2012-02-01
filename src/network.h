@@ -18,6 +18,7 @@ typedef struct rootrec   *RootRec;
 #include "object.h"
 #include "extension.h"
 
+#include "main.h"
 
 /* This holds all of the user-accessible global stuff.  
    There is a global Root pointer to it and each network has a copy. */
