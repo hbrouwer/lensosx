@@ -1,4 +1,4 @@
-# (c) 2015, Harm Brouwer
+# (c) 2011, Harm Brouwer
 
 cmake_minimum_required(VERSION 2.8)
 
@@ -13,15 +13,6 @@ if(APPLE)
         set(CMAKE_OSX_ARCHITECTURES "x86_64;i386")
         set(CMAKE_OSX_DEPLOYMENT_TARGET "10.5")
 endif()
-
-# X11 for linking
-set(X11_INCLUDE_DIR 
-        /opt/X11/include
-        )
-set(X11_LIBRARIES 
-        /opt/X11/lib/libX11.dylib)
-include_directories(${X11_INCLUDE_DIR})
-link_libraries(${X11_LIBRARIES})
 
 # TCL/TK, so that we can link against it later
 find_package(TCL REQUIRED)
@@ -74,7 +65,6 @@ set_source_files_properties(
 add_executable(${PROGNAME} MACOSX_BUNDLE 
         ${LensOSX_SRC}
         ${LensOSX_MACOSX_RESOURCE_FILES})
-target_link_libraries(${PROGNAME} ${X11_LIBRARY})
 target_link_libraries(${PROGNAME} ${TCL_LIBRARY})
 target_link_libraries(${PROGNAME} ${TK_LIBRARY})
 
@@ -83,7 +73,7 @@ install(TARGETS ${PROGNAME}
 
 # wrap everything into an application bundle
 if(APPLE)
-        set(APP ${LensOSX_SOURCE_DIR}/${PROGNAME}.app)
+        set(APP ${CMAKE_INSTALL_PREFIX}/${PROGNAME}.app)
 
         # bundle properties
         set(MACOSX_BUNDLE_NAME "LensOSX")
@@ -92,7 +82,6 @@ if(APPLE)
         set(MACOSX_BUNDLE_GUI_IDENTIFIER "nl.rug.lensosx")
 
         set(DIRS
-                ${X11_LIBRARY_PATH}
                 ${TCL_LIBRARY_PATH}
                 ${TK_LIBRARY_PATH})
 

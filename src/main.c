@@ -269,14 +269,10 @@ done:
 int main(int argc, char *argv[]) {
         int arg = 1;
 
-        Console = TRUE;
-
         while (arg < argc) {
                 if        (subString(argv[arg], "-nogui",   2)) {
-                        // XXX: Not sure if this is what we want ...
-                        Console = FALSE;
                         Gui = FALSE;
-                        Batch = TRUE;
+                        Batch = FALSE;
                 } else if (subString(argv[arg], "-batch",   2)) {
                         Batch = TRUE;
                         Gui = FALSE;
@@ -288,10 +284,8 @@ int main(int argc, char *argv[]) {
                         // exploit -psn_* argument (allegedly used for
                         // AppleScript) to determine that this session
                         // is not initiated from the command line
-                        
-                        // XXX: No longer necessary?
-                        //Console = TRUE;
-                        //Batch = FALSE;
+                        Console = TRUE;
+                        Batch = FALSE;
                 } else if (subString(argv[arg], "-help",    2)) {
                         printUsage(argv[0]);
                 } else break;
